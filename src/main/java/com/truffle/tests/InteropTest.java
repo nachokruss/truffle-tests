@@ -1,4 +1,4 @@
-package com.upwork;
+package com.truffle.tests;
 
 import java.io.IOException;
 import java.net.URL;
@@ -6,23 +6,19 @@ import java.net.URL;
 import com.oracle.truffle.api.source.Source;
 import com.oracle.truffle.api.vm.PolyglotEngine;
 
-public class AlgorithmTest {
+public class InteropTest {
 	
 	private PolyglotEngine polyglotEngine = PolyglotEngine.newBuilder().build();
 	
 	private final static int WARM_UP_ITERATIONS = 10;
-	private static final String JS_BUBBLE_SORT = "bubbleSort/bubbleSort.js";
-	private static final String RUBY_BUBBLE_SORT = "bubbleSort/bubbleSort.rb";
-	private static final String R_BUBBLE_SORT = "bubbleSort/bubbleSort.R";
+	private static final String JS_BUBBLE_SORT = "interop/interop.js";
 
 	public static void main(String[] args) throws IOException {
-		new AlgorithmTest().run();
+		new InteropTest().run();
 	}
 
 	private void run() throws IOException {
 		interpretScript(JS_BUBBLE_SORT, polyglotEngine);
-		interpretScript(RUBY_BUBBLE_SORT, polyglotEngine);
-		interpretScript(R_BUBBLE_SORT, polyglotEngine);
 	}
 	
 	private void interpretScript(String fileName, PolyglotEngine polyglotEngine) throws IOException {

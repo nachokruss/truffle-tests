@@ -1,4 +1,4 @@
-package com.upwork.algorithm;
+package com.truffle.tests.algorithm;
 
 import java.util.Random;
 

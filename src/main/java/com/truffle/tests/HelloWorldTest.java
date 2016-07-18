@@ -1,4 +1,4 @@
-package com.upwork;
+package com.truffle.tests;
 
 import java.io.IOException;
 import java.net.URL;
