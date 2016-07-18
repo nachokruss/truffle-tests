@@ -15,7 +15,7 @@ Runs a script that prints 'Hello World' to standard output and another one that 
 ```bash
 java -polyglot -cp target/classes/ com.truffle.tests.HelloWorldTest
 ```
-### Buble Sort
+### Bubble Sort
 Bubble sorts 1000 arrays with 1000 elements each in Ruby, Javascript and R
 ```bash
 java -polyglot -cp target/classes/ com.truffle.tests.AlgorithmTest
