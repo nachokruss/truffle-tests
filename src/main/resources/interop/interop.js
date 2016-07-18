@@ -1,2 +1,2 @@
-var javaBubbleSort = com.upwork.algorithm.BubbleSort();
+var javaBubbleSort = com.truffle.tests.algorithm.BubbleSort();
 javaBubbleSort.run();
