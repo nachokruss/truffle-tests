@@ -21,7 +21,7 @@ Bubble sorts 1000 arrays with 1000 elements each in Ruby, Javascript and R
 java -polyglot -cp target/classes/ com.truffle.tests.AlgorithmTest
 ```
 ### Interop
-Same as previous but call a java implementation of the algorithm from the scripting language
+Same as previous but calls a java implementation of the algorithm from the scripting language
 ```bash
 java -polyglot -cp target/classes/ com.truffle.tests.InteropTest
 ```
