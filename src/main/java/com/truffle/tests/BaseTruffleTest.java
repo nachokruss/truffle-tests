@@ -22,7 +22,7 @@ public class BaseTruffleTest {
 				polyglotEngine.eval(source);
 			}
 			Duration tookLast = evalAndGetDuration(polyglotEngine, source);
-			System.out.println("First run took " + tookFirst + "ms. last run took " + tookLast + "ms.");
+			System.out.println("First run took " + tookFirst + ". last run took " + tookLast + ".");
 		});
 	}
 
